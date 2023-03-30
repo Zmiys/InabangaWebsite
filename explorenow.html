@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale= 1.0">
+        <title>Inabanga Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300&display=swap" rel="stylesheet">
+        <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+
+        <style>
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: auto;
+}
+.one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background-image: linear-gradient(rgb(66, 100, 107), rgb(6, 43, 49)), url(image/image3.jpg);
+    
+    
+
+}
+.box{
+    position: relative;
+    width: 240px;
+    height: 240px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.box span{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+    
+}
+.box span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gal{
+    margin-top: -120px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+.home-btn{
+    
+    margin-top: 0;
+    color: white;
+    margin-left: 10px;
+  
+    
+}
+.hom1{
+    margin-bottom: 2px;
+}
+
+.placetogo{
+    margin:auto;
+    padding-top: 20px;
+}
+
+
+
+        </style>
+    
+    
+    </head>
+
+    <body>
+
+       <section class="one">
+
+        
+            <div class="box">
+                <span style="--i:1"><img src="image/pic1.jpg"></span>
+                <span style="--i:2;"><img src="image/image7.jpeg"></span>
+                <span style="--i:3"><img src="image/pic3.jpg"></span>
+                <span style="--i:4;"><img src="image/images (10).jpeg"></span>
+                <span style="--i:5;"><img src="image/image6.jpeg"></span>
+                <span style="--i:6"><img src="image/pic2.jfif"></span>
+                <span style="--i:7"><img src="image/image9.jpg"></span>
+                <span style="--i:8"><img src="image/image1.jpeg"></span>
+
+
+               
+            </div>
+
+        </section>
+
+            <section class="gal1">
+                <div class="gal">
+                    <h1>GALLERY</h1>
+                    
+                </div>
+        
+            </section>
+
+        <section class="hom1">
+            <div class="hom">
+                <a href="aboutUs.html" class="about-btn home-btn">HOME</a>   
+            </div>
+            
+        </section>
+
+        <section class="placestogo">
+            <div class="togotext">
+                <h1>Places to visit</h1>
+                <p>Inabanga is known for its beautiful places like beaches, rivers, park and etc.<br> Inabanga Cultural and Creative Park is the newly open
+                    park where you can spend quality time with your family and friends.<br> We also have beautiful beaches where you can chill and relax. 
+                </p>
+            </div>
+            <div class="row">
+                <div class="place-col">
+                    <h1>Inabanga CCP</h1>
+                    <img src="image/images (10).jpeg" class="src">
+                   
+                </div>
+                <div class="place-col">
+                    <h1>Inabanga River</h1>
+                    <img src="image/image6.jpeg" alt="" class="src">
+                    
+                </div>
+                <div class="place-col">
+                    <h1>Ondol Beach</h1>
+                    <img src="image/image10.jfif" alt="" class="src">
+                    
+                </div>
+            </div>
+
+        </section>
+
+       
+
+       
+
+    </body>
+</html>
